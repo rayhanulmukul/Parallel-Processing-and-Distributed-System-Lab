@@ -1,6 +1,6 @@
 /*
     How to run:
-    mpic++ -o search phonebook_search.cpp
+    mpic++ -o search phonebook_search_mpi_shakil.cpp
     mpirun -np 4 ./search phonebook1.txt Bob
     mpirun -np 4 ./search file1.txt file2.txt Bob //multiple files
 */
@@ -167,3 +167,20 @@ int main(int argc, char **argv){
     return 0;
 
 }
+
+
+/*
+    Run Time Checking:
+    -------------------------
+    mpic++ -o search phonebook_search_mpi_shakil.cpp
+    time mpirun -np 4 ./search phonebook1.txt Bob
+    time mpirun -np 4 ./search file1.txt file2.txt Bob //multiple files
+
+    MPI Version:
+    -------------------------
+    mpicc --version
+
+    Core Checking:
+    -------------------------
+    nproc
+*/
